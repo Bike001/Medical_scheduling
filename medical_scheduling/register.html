@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Medical Scheduling Platform - Registration</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<header>
+  <style>
+    body {
+        background-image: url('https://media.istockphoto.com/id/1369987284/photo/close-up-of-a-stethoscope-and-digital-tablet-with-virtual-electronic-medical-record-of.jpg?s=1024x1024&w=is&k=20&c=yVQAXb6m0Cdm5krTO-rwkEbFw2jeZUGjvNQcPhUGl1k=');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .container {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        border-radius: 10px;
+    }
+</style>
+</header>
+<main>
+  <section class="container mt-5">
+    <h1 class="text-center mb-4">Registration</h1>
+    <form action="register.php" method="post">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="zip_code">Zip Code:</label>
+        <input type="text" id="zip_code" name="zip_code" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="user_type">I am a:</label>
+        <select id="user_type" name="user_type" class="form-control" required>
+          <option value="Doctor">Doctor</option>
+          <option value="Nurse">Nurse</option>
+          <option value="Pharmaceutical Supplier">Pharmaceutical Supplier</option>
+          <option value="Medical Supplier">Medical Supplier</option>
+        </select>
+      </div>
+      <input type="submit" value="Register" class="btn btn-primary">
+    </form>
+  </section>
+</main>
+<footer>
+  <!-- Add your footer content here -->
+</footer>
+</body>
+</html>
